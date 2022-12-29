@@ -1,0 +1,14 @@
+CREATE DATABASE todo;
+USE todo;
+
+CREATE TABLE todo (
+  Id INT NOT NULL AUTO_INCREMENT, 
+  Todo VARCHAR(100), 
+  PRIMARY KEY (Id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO todo (Todo) VALUES ("Todo 1");
+INSERT INTO todo (Todo) VALUES ("Todo 2");
+INSERT INTO todo (Todo) VALUES ("Todo 3");
+
+SELECT * FROM todo;
